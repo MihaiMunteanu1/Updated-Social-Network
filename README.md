@@ -2,7 +2,7 @@
 
 ## Description
 
-### This project is a refactored version of the original Social Network application. <br> It features a redesigned interface tailored to individual user profiles and enhanced security measures. Passwords are now hashed and securely stored in the database.
+#### This project is a refactored version of the original Social Network application. <br> It features a redesigned interface tailored to individual user profiles and enhanced security measures. Passwords are now hashed and securely stored in the database.
 
 The main interface of the SocialNetwork application, displaying the login page.
 <img src="https://github.com/user-attachments/assets/440135bc-b212-4cd7-849c-19ff080a537b" width="900px">
