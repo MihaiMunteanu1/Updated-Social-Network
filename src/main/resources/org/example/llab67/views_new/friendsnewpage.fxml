@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.llab67.controller.FriendsController">
+   <children>
+      <Label layoutX="256.0" layoutY="34.0" text="Friends" textFill="#18b0e3">
+         <font>
+            <Font name="SansSerif Bold" size="21.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableViewFriends" layoutX="24.0" layoutY="73.0" prefHeight="242.0" prefWidth="546.0" style="-fx-background-color: white; -fx-border-color: #18b0e3; -fx-border-radius: 10.0;">
+        <columns>
+          <TableColumn fx:id="tableColumnFirstNameFriend" prefWidth="131.55560111999512" text="First name" />
+          <TableColumn fx:id="tableColumnLastNameFriend" prefWidth="105.77778625488281" text="Last name" />
+            <TableColumn fx:id="tableColumnEmailFriend" prefWidth="119.5555419921875" text="Email" />
+            <TableColumn fx:id="tableColumnFriendsFrom" prefWidth="188.0" text="Friends from" />
+        </columns>
+      </TableView>
+      <Label fx:id="labelCurrentPage" layoutX="24.0" layoutY="328.0" text="Current page: 1" textFill="#18b0e3">
+         <font>
+            <Font name="SansSerif Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonPreviousPage" onAction="#handlePreviousPage" layoutX="256.0" layoutY="323.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="41.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 50.0;" text="&lt;&lt;">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonNextPage" onAction="#handleNextPage" layoutX="300.0" layoutY="323.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="41.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 50.0;" text="&gt;&gt;">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button onAction="#handleDeleteFriend" layoutX="268.0" layoutY="363.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="68.0" style="-fx-background-radius: 20.0; -fx-background-color: white; -fx-border-color: #18b0e3; -fx-border-radius: 10.0;" text="Remove">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

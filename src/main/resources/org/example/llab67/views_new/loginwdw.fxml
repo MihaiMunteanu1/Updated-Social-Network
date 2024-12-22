@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="781.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.llab67.controller.LoginController">
+   <children>
+      <Label layoutX="193.0" layoutY="52.0" text="Social  Network">
+         <font>
+            <Font name="SansSerif Bold Italic" size="53.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="477.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/social-network-abstract.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="477.0" layoutX="299.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/social-network-abstract.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="404.0" layoutX="485.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/social-network-abstract.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="363.0" layoutY="235.0" text="Email:">
+         <font>
+            <Font name="SansSerif Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="351.0" layoutY="287.0" text="Password:">
+         <font>
+            <Font name="SansSerif Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldEmail" layoutX="315.0" layoutY="257.0" promptText="Your email...">
+         <font>
+            <Font name="SansSerif Regular" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textFieldPasswordVisible" layoutX="316.0" layoutY="307.0">
+         <font>
+            <Font name="SansSerif Regular" size="12.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="textFieldPassword" layoutX="316.0" layoutY="307.0" promptText="Your password...">
+         <font>
+            <Font name="SansSerif Regular" size="12.0" />
+         </font>
+      </PasswordField>
+      <Button layoutX="365.0" layoutY="363.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="46.0" prefWidth="48.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 10.0;">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="38.0" onMouseClicked="#handleLogin" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/login.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="193.0" layoutY="51.0" prefHeight="68.0" prefWidth="395.0" text="Social  Network" textFill="#18b0e3">
+         <font>
+            <Font name="SansSerif Bold Italic" size="53.0" />
+         </font>
+      </Label>
+      <Label layoutX="325.0" layoutY="430.0" text="Create an account:">
+         <font>
+            <Font name="SansSerif Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="368.0" layoutY="456.0" mnemonicParsing="false" onAction="#handleSignup" prefHeight="46.0" prefWidth="48.0" style="-fx-background-color: white; -fx-border-color: #000000; -fx-border-radius: 10.0;">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="38.0" onMouseClicked="#handleSignup" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/signup.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ToggleButton fx:id="showPasswordButton" layoutX="472.0" layoutY="302.0" mnemonicParsing="false" onAction="#handleShowPasswordButton" prefHeight="23.0" prefWidth="26.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 10.0;">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="25.0" onMouseClicked="#handleShowPasswordButton" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/showpassword.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </ToggleButton>
+      <ProgressBar fx:id="progressBar" layoutX="319.0" layoutY="336.0" prefHeight="18.0" prefWidth="150.0" progress="0.0" visible="false" />
+   </children>
+</AnchorPane>
