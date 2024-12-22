@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="705.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.llab67.controller.UserController">
+   <children>
+      <SplitPane dividerPositions="0.08543903979785218" prefHeight="526.0" prefWidth="705.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="524.0" prefWidth="55.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="9.0" layoutY="75.0" onMouseClicked="#handleFriendRequests" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/social-network.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="10.0" layoutY="186.0" onMouseClicked="#handleAddFriend" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/6388049.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="44.0" layoutX="9.0" layoutY="131.0" onMouseClicked="#handleChat" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/communication.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="10.0" layoutY="21.0" onMouseClicked="#handleFriends" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/people.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="9.0" layoutY="243.0" onMouseClicked="#handleUpdateUser" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/laptop.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="524.0" prefWidth="599.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="116.0" fitWidth="102.0" layoutX="244.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/avatar.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="firstName" layoutX="264.0" layoutY="246.0" text="FirstName">
+                     <font>
+                        <Font name="SansSerif Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lastName" layoutX="264.0" layoutY="299.0" text="LastName">
+                     <font>
+                        <Font name="SansSerif Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="email" layoutX="265.0" layoutY="352.0" prefHeight="17.0" prefWidth="150.0" text="Email">
+                     <font>
+                        <Font name="SansSerif Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nrFriends" layoutX="258.0" layoutY="158.0" prefHeight="16.0" prefWidth="110.0" text="32 friends">
+                     <font>
+                        <Font name="SansSerif Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="friendsWith" layoutX="258.0" layoutY="188.0" prefHeight="15.0" prefWidth="312.0" text="friends with">
+                     <font>
+                        <Font name="SansSerif Regular" size="12.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="577.0" layoutY="465.0" onMouseClicked="#handleBackToLogin" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/check-out.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="14.0" layoutY="472.0" mnemonicParsing="false" onAction="#handleDeleteUser" prefHeight="25.0" prefWidth="94.0" style="-fx-background-radius: 20.0; -fx-background-color: white; -fx-border-color: #18b0e3; -fx-border-radius: 10.0;" text="Delete profile">
+                     <font>
+                        <Font name="SansSerif Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="firstName1" layoutX="144.0" layoutY="246.0" text="First Name:" textFill="#08a9ef">
+                     <font>
+                        <Font name="SansSerif Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lastName1" layoutX="144.0" layoutY="299.0" text="Last Name:" textFill="#08a9ef">
+                     <font>
+                        <Font name="SansSerif Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="email1" layoutX="144.0" layoutY="352.0" prefHeight="17.0" prefWidth="150.0" text="Email:" textFill="#08a9ef">
+                     <font>
+                        <Font name="SansSerif Bold" size="18.0" />
+                     </font>
+                  </Label>
+
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
